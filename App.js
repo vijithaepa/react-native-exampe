@@ -4,41 +4,20 @@ import { StyleSheet, Text, View } from 'react-native';
 import FlexboxExample from "./components/FlexboxExample";
 import Touchables from "./components/Touchables";
 import TabNavigation from "./components/TabNavigation";
-import { TabNavigator } from "react-navigation";
+import TabNavigator from "./components/TabNavigation";
+import Tabs from './components/SimpleTabNavigation'
 
-function Home() {
-    return (
-        <View style={styles.container}>
-            <Text>Home</Text>
-        </View>
-    )
-}
-
-function DashBoard() {
-    return (
-        <View style={styles.container}>
-            <Text>Dashboard</Text>
-        </View>
-    )
-}
-
-const Tabs = TabNavigator({
-    Home: {
-        screen: Home,
-    },
-    DashBoard: {
-        screen: DashBoard,
-    }
-})
 
 export default class App extends Component {
 
     render() {
+        console.log('Loading ...')
         return (
             <View style={{flex: 1}}>
                 {/*<FlexboxExample />*/}
                 {/*<Touchables/>*/}
-                <Tabs />
+                <TabNavigator />
+                {/*<Tabs/>*/}
             </View>
         )
     }
