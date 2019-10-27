@@ -6,6 +6,8 @@ import Touchables from "./components/Touchables";
 import TabNavigation from "./components/TabNavigation";
 import TabNavigator from "./components/TabNavigation";
 import Tabs from './components/SimpleTabNavigation'
+import StackNavigator from './components/StackNavigator'
+import SimpleStackNavigator from './components/SimpleStackNavigator'
 
 
 export default class App extends Component {
@@ -16,8 +18,10 @@ export default class App extends Component {
             <View style={{flex: 1}}>
                 {/*<FlexboxExample />*/}
                 {/*<Touchables/>*/}
-                <TabNavigator />
+                {/*<TabNavigator />*/}
                 {/*<Tabs/>*/}
+                {/*<StackNavigator/>*/}
+                <SimpleStackNavigator/>
             </View>
         )
     }
