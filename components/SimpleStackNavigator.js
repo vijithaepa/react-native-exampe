@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Button, View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
+import { createAppContainer, createStackNavigator } from 'react-navigation';
+// import { createStackNavigator } from 'react-navigation-stack';
 
 const HomeScreen = ({ navigation }) => (
     <View style={styles.container}>

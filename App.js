@@ -8,7 +8,8 @@ import TabNavigator from "./components/TabNavigation";
 import Tabs from './components/SimpleTabNavigation'
 import StackNavigator from './components/StackNavigator'
 import SimpleStackNavigator from './components/SimpleStackNavigator'
-
+import SimpleDrawerNavigator from './components/SimpleDrawerNavigator'
+import DrawerNavigator from './components/DrawerNavigator'
 
 export default class App extends Component {
 
@@ -21,7 +22,7 @@ export default class App extends Component {
                 {/*<TabNavigator />*/}
                 {/*<Tabs/>*/}
                 {/*<StackNavigator/>*/}
-                <SimpleStackNavigator/>
+                <DrawerNavigator/>
             </View>
         )
     }
