@@ -11,10 +11,12 @@ import SimpleStackNavigator from './components/SimpleStackNavigator'
 import SimpleDrawerNavigator from './components/SimpleDrawerNavigator'
 import DrawerNavigator from './components/DrawerNavigator'
 
+import {Location} from 'expo'
+
 export default class App extends Component {
 
     render() {
-        console.log('Loading ...')
+        console.log('Loading ...', Location)
         return (
             <View style={{flex: 1}}>
                 {/*<FlexboxExample />*/}
